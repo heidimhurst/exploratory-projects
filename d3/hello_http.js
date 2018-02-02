@@ -2,7 +2,7 @@ var http = require('http');
 var fs = require('fs');
 
 var server = http.createServer(function(req, res) {
-  fs.readFile('demofile1.html', function(err, data) {
+  fs.readFile('circle_wave.html', function(err, data) {
     res.writeHead(200, {'Content-Type': 'text/html'});
     res.write(data);
     res.end();
